@@ -23,15 +23,6 @@ public class Locadora implements ILocadora {
         this.reservas = new Filme[limiteReservas];
     }
 
-    public Filme buscarFilmePorCodigo(String codigoFilme){
-        for (int i = 0; i < this.acervo.length; i++) {
-            if (this.acervo[i] != null && this.acervo[i].getCodigo().equals(codigoFilme) ){
-                return this.acervo[i];
-            }
-        }
-        return null;
-    }
-
 
     @Override
     public Filme BuscarFilmePorCodigo(String codigoFilme) {
